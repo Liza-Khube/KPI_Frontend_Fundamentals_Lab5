@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Хубеджева Є. П. ІМ-43 ЛР№5 Вар55(10)</title>
+  </head>
+  <body>
+    <div id="student-container">
+      <form class="card" id="student-form">
+        <h1>Форма реєстрації студента</h1>
+        <label for="full-name">ПІБ</label><br />
+        <input
+          type="text"
+          id="full-name"
+          name="full-name"
+          placeholder="Іванов І.І."
+          autocomplete="on"
+        />
+        <span class="error-text"></span><br />
+        <label for="group">Група</label><br />
+        <input type="text" id="group" name="group" placeholder="АА-11" />
+        <span class="error-text"></span><br />
+        <label for="phone">Телефон</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="(000)-000-00-00"
+          autocomplete="on"
+        />
+        <span class="error-text"></span><br />
+        <label for="address">Адреса</label><br />
+        <input type="text" id="address" name="address" placeholder="м. 12345" />
+        <span class="error-text"></span><br />
+        <label for="email">Пошта</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          autocomplete="on"
+        />
+        <span class="error-text"></span><br />
+        <input type="submit" id="submit" value="Надіслати" name="submit" />
+      </form>
+      <div class="card" id="student-info"></div>
+    </div>
+    <div class="card" id="color-table-container">
+      <h1>Кольорово-числова таблиця</h1>
+      <label for="color-picker">Вибір кольору:</label>
+      <input type="color" id="color-picker" />
+      <table id="color-picker-table"></table>
+      <p>Унікальна клітинка: 5</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
