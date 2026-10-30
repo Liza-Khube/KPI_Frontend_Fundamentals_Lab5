@@ -117,15 +117,10 @@ b {
   transition: all 0.3s;
 }
 
-#student-form > #submit:hover:not(.disable) {
+#student-form > #submit:hover {
   min-width: 70%;
   background-color: #4058d1;
   transition: all 0.3s;
-}
-
-#student-form > #submit.disable {
-  background-color: #9c9fae;
-  cursor: not-allowed;
 }
 
 #student-form > span.error-text {
